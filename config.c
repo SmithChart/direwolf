@@ -2062,6 +2062,7 @@ void config_init (char *fname, struct audio_s *p_audio_config,
 	    n = atoi(t);
             if (n >= 0 && n <= 255) {
 	      p_audio_config->achan[channel].txdelay = n;
+	      dw_printf ("TXDELAY set to %d\n", n);
 	    }
 	    else {
 	      p_audio_config->achan[channel].txdelay = DEFAULT_TXDELAY;
