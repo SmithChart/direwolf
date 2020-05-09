@@ -638,6 +638,14 @@ static void * xmit_thread (void *arg)
 
 	      } /* wait for clear channel error. */
 	    } /* Have pp */
+	    dw_printf ("xmit: packet sent\n");
+	    text_color_set(DW_COLOR_INFO);
+	    dw_printf ("\nQRT\n");
+	    log_term ();
+	    ptt_term ();
+	    dwgps_term ();
+	    SLEEP_SEC(1);
+	    exit(0);
 	  } /* while queue not empty */
 	} /* while 1 */
 

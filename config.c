@@ -20,7 +20,7 @@
 #define CONFIG_C 1		// influences behavior of aprs_tt.h
 
 
-// #define DEBUG 1
+#define DEBUG 1
 
 /*------------------------------------------------------------------
  *
